@@ -1,0 +1,18 @@
+---
+import RootLayout from '../../layouts/RootLayout.astro';
+const img = '/public/dog0.jpg';
+---
+
+<RootLayout>
+	<div>
+		<h1>Static Site Generation</h1>
+		<img src={img} alt='Random Dog' />
+		<button
+			onClick={() => {
+				window.location.href = `/perritos/p${Math.floor(Math.random() * 10)}.astro`;
+			}}
+		>
+			¡Otro! ❤️
+		</button>
+	</div>
+</RootLayout>

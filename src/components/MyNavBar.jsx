@@ -10,11 +10,14 @@ function MyNavBar() {
       </Navbar.Brand>
       <Navbar.Toggle />
       <Navbar.Collapse>
-        <Navbar.Link href="/csr" active>
+        <Navbar.Link href="/csr" active={true}>
           CSR
         </Navbar.Link>
         <Navbar.Link href="/ssr">
           SSR
+        </Navbar.Link>
+        <Navbar.Link href="/perritos/p0">
+          SSG
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
